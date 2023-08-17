@@ -13,31 +13,22 @@
         <ul class="stats">
           <li>
             <span class="label">{stats.folovers}</span>
-            <span class="quantity">{stats.quantity}</span>
+           <span class="quantity">{stats.folovers}</span>
           </li>
           <li>
             <span class="label">{stats.views}</span>
-            <span class="quantity">{stats.quantity}</span>
+            <span class="quantity">{stats.views}</span>
           </li>
           <li>
             <span class="label">{stats.likes}</span>
-            <span class="quantity">{stats.quantity}</span>
+            <span class="quantity">{stats.likes}</span>
           </li>
         </ul>
       </div>
     </div>
   );
 }
+ 
 
 
-<Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-  folovers={stats.folovers}
-  quantity={stats.quantity}
-  views={stats.views}
-  likes={stats.likes}
-/>;
+
