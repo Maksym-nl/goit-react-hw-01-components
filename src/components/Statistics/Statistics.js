@@ -1,4 +1,5 @@
-export function Statistics ({ title, stats }) {
+export function Statistics ({ title, stats }){
+return (
   <section className="statistics">
     {title && <h2 className="title">{title}</h2>}
 
@@ -10,5 +11,6 @@ export function Statistics ({ title, stats }) {
         </li>
       ))}
     </ul>
-  </section>;
+  </section>
+);
 }
