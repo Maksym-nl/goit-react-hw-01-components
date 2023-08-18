@@ -1,12 +1,9 @@
-export function FriendListItem({ avatar, name, isOnline }) {
+export function FriendListItem(avatar, name, isOnline){
   return (
-    <ul class="friend-list">
-      <li>
-        <p>{isOnline}</p>
-        <img src={avatar} alt={name} width="50" />
-        <p>{name}</p>
-        <p key={friend.id}>{id}</p>
-      </li>
-    </ul>
-  );
+<li key={friends.id} className="item">
+  <span className="status">{isOnline}</span>
+  <img className="avatar" src="{avatar}" alt="User avatar" width="48" />
+  <p className="name">{name}</p>
+</li>
+  )
 }
