@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export function Statistics ({ title, stats }){
 return (
   <section className="statistics">
@@ -14,3 +15,14 @@ return (
   </section>
 );
 }
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+}
+
