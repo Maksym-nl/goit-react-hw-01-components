@@ -5,12 +5,12 @@ import { Statistics } from './Statistics/Statistics';
 import friends from 'Data/friends.json';
 import { FriendList } from './FriendList/FriendList';
 import transactions from 'Data/transactions.json';
-import {TransactionHistory} from './TransactionHistory/Transactions'
+import { TransactionHistory } from './TransactionHistory/Transactions';
 
 export const App = () => {
   return (
-    <div>   
-          <Profile
+    <div>
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}

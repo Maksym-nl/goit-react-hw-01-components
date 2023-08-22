@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import {List, ListItem, Avatar} from './FriendList.styled'
-export function FriendListItem ({ avatar, name, isOnline, id }) {
+import PropTypes from 'prop-types';
+import {ListItem} from '../FriendList/FriendList.styled';
+export function FriendListItem({ avatar, name, isOnline, id }) {
   return (
     <ListItem key={id}>
       <span className="status">{isOnline}</span>
@@ -9,7 +9,6 @@ export function FriendListItem ({ avatar, name, isOnline, id }) {
     </ListItem>
   );
 }
-
 
 FriendListItem.propType = {
   avatar: PropTypes.string.isRequired,
