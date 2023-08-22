@@ -1,31 +1,31 @@
 
 import PropTypes from "prop-types";
-import { Avatar, Text, Stats, StatsList, StatsItem } from "./Profile.styled";
+import { Avatar, Text, Quantity, StatsList, StatsItem } from "./Profile.styled";
 export function Profile ({ username, tag, location, avatar, stats}) {
  return (
-    <div className="profile">
+    <div>
      <div className="description">
        <Avatar src={avatar} alt={username}/>
-       <Text>{username}</Text>
-       <Text>{tag}</Text>
-       <Text>{location}</Text>
+       <Text color="red">{username}</Text>
+       <Text>{'@' + tag}</Text>
+       <Text color="green">{location}</Text>
      </div>
-     <Stats>
+     <div>
        <StatsList>
          <StatsItem>
            <span className="label">Followers: </span>
-          <span className="quantity">{stats.followers}</span>
+          <Quantity>{stats.followers}</Quantity>
          </StatsItem>
          <StatsItem>
            <span className="label">Views: </span>
-           <span className="quantity">{stats.views}</span>
+           <Quantity>{stats.views}</Quantity>
          </StatsItem>
          <StatsItem>
            <span className="label">Likes: </span>
-           <span className="quantity">{stats.likes}</span>
+           <Quantity>{stats.likes}</Quantity>
          </StatsItem>
        </StatsList>
-     </Stats>
+     </div>
    </div>
  );
 }
