@@ -1,20 +1,20 @@
-import PropTypes from "prop-types";
-import { Title,List, Item } from "./Statistics.styled";
-export function Statistics ({ title, stats }){
-return (
-  <section className="statistics">
-    {title && <Title>{title}</Title>}
+import PropTypes from 'prop-types';
+import { Title, List, Item } from './Statistics.styled';
+export function Statistics({ title, stats }) {
+  return (
+    <section className="statistics">
+      {title && <Title>{title}</Title>}
 
-    <List>
-      {stats.map(stat => (
-        <Item key={stat.id} class="item">
-          <span className="label">{stat.label}</span>
-          <span className="percentage">{stat.percentage}%</span>
-        </Item>
-      ))}
-    </List>
-  </section>
-);
+      <List>
+        {stats.map(stat => (
+          <Item key={stat.id} class="item">
+            <span className="label">{stat.label}</span>
+            <span className="percentage">{stat.percentage}%</span>
+          </Item>
+        ))}
+      </List>
+    </section>
+  );
 }
 Statistics.propTypes = {
   title: PropTypes.string,
@@ -25,5 +25,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ).isRequired,
-}
-
+};

@@ -5,5 +5,5 @@ export const List = styled.ul`
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  align-content: cente;
+  align-content: center;
 `;

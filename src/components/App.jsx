@@ -6,11 +6,13 @@ import friends from 'Data/friends.json';
 import { FriendList } from './FriendList/FriendList';
 import transactions from 'Data/transactions.json';
 import { TransactionHistory } from './TransactionHistory/Transactions';
-import { FriendListItem } from './FriendListItem/FriendListItem';
+import { GlobalStyle } from './Global.styled';
+import {Layout} from './Layout'
+
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -20,8 +22,8 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />;
-      <FriendListItem/>
       <TransactionHistory items={transactions} />;
-    </div>
+      <GlobalStyle/>
+    </Layout>
   );
 };
