@@ -20,6 +20,6 @@ export const TablElement = styled.td`
   border: 1px solid black;
   border-radius:4px;
   width: calc(100% / 4)
- `
+ `;
 
 

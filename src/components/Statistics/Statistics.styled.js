@@ -12,6 +12,12 @@ export const List = styled.ul`
   flex-wrap: nowrap;
   align-items: center;
   font-size: 25px;
+  :hover, :focus {
+    border-color: red;
+    font-size: 35px; 
+    border: 5px solid red;
+    border-radius: 50px;
+  }
 `;
 export const Item = styled.li`
 width: calc(100% / 3);
@@ -21,14 +27,14 @@ width: calc(100% / 3);
   align-items: center;
   justify-content: center;
   border: 1px solid;
-  color: black;
+  color: #FFFFFF;
   border-radius: 4px;
   padding: 15px;
-  
-  background-color: ${props => {
-    return `#${Math.floor((Math.random() * 1677215) / props.color)
+     background-color: ${props => {
+    return `#${Math.floor((Math.random() * 1677215))
       .toString(16)
       .padStart(6, 0)}`;
   }};
+ 
 `;
 
